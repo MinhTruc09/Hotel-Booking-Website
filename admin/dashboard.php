@@ -45,11 +45,11 @@
       <div class="col-lg-10 ms-auto p-4 overflow-hidden">
         
         <div class="d-flex align-items-center justify-content-between mb-4">
-          <h3>DASHBOARD</h3>
+          <h3>BẢNG THỐNG KÊ</h3>
           <?php 
             if($is_shutdown['shutdown']){
               echo<<<data
-                <h6 class="badge bg-danger py-2 px-3 rounded">Shutdown Mode is Active!</h6>
+                <h6 class="badge bg-danger py-2 px-3 rounded">Chế độ shutdown đang hoạt động!</h6>
               data;
             }
           ?>
@@ -59,7 +59,7 @@
           <div class="col-md-3 mb-4">
             <a href="new_bookings.php" class="text-decoration-none">
               <div class="card text-center text-success p-3">
-                <h6>New Bookings</h6>
+                <h6>Đơn đặt phòng mới</h6>
                 <h1 class="mt-2 mb-0"><?php echo $current_bookings['new_bookings'] ?></h1>
               </div>
             </a>
@@ -67,7 +67,7 @@
           <div class="col-md-3 mb-4">
             <a href="refund_bookings.php" class="text-decoration-none">
               <div class="card text-center text-warning p-3">
-                <h6>Refund Bookings</h6>
+                <h6>Hoàn tác đặt phòng</h6>
                 <h1 class="mt-2 mb-0"><?php echo $current_bookings['refund_bookings'] ?></h1>
               </div>
             </a>

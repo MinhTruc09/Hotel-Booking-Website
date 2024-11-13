@@ -22,11 +22,11 @@
     <div class="row">
 
       <div class="col-12 my-5 px-4">
-        <h2 class="fw-bold">BOOKINGS</h2>
+        <h2 class="fw-bold">ĐẶT PHÒNG</h2>
         <div style="font-size: 14px;">
-          <a href="index.php" class="text-secondary text-decoration-none">HOME</a>
+          <a href="index.php" class="text-secondary text-decoration-none">TRANG CHỦ</a>
           <span class="text-secondary"> > </span>
-          <a href="#" class="text-secondary text-decoration-none">BOOKINGS</a>
+          <a href="#" class="text-secondary text-decoration-none">ĐẶT PHÒNG CHỨ ?</a>
         </div>
       </div>
 
@@ -94,9 +94,9 @@
                   <b>Check out: </b> $checkout
                 </p>
                 <p>
-                  <b>Amount: </b> ₹$data[price] <br>
+                  <b>Số lượng </b> ₹$data[price] <br>
                   <b>Order ID: </b> $data[order_id] <br>
-                  <b>Date: </b> $date
+                  <b>Ngày đặt phòng: </b> $date
                 </p>
                 <p>
                   <span class='badge $status_bg'>$data[booking_status]</span>
@@ -121,23 +121,23 @@
         <form id="review-form">
           <div class="modal-header">
             <h5 class="modal-title d-flex align-items-center">
-              <i class="bi bi-chat-square-heart-fill fs-3 me-2"></i> Rate & Review
+              <i class="bi bi-chat-square-heart-fill fs-3 me-2"></i> Đánh giá và Reviews
             </h5>
             <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="mb-3">
-              <label class="form-label">Rating</label>
+              <label class="form-label">Đánh giá</label>
               <select class="form-select shadow-none" name="rating">
-                <option value="5">Excellent</option>
-                <option value="4">Good</option>
-                <option value="3">Ok</option>
-                <option value="2">Poor</option>
-                <option value="1">Bad</option>
+                <option value="5">Xuất sắc</option>
+                <option value="4">Tốt</option>
+                <option value="3">Bình Thường</option>
+                <option value="2">Tệ</option>
+                <option value="1">Cực tệ</option>
               </select>
             </div>
             <div class="mb-4">
-              <label class="form-label">Review</label>
+              <label class="form-label">Reviews</label>
               <textarea type="password" name="review" rows="3" required class="form-control shadow-none"></textarea>
             </div>
             
@@ -145,7 +145,7 @@
             <input type="hidden" name="room_id">
 
             <div class="text-end">
-              <button type="submit" class="btn custom-bg text-white shadow-none">SUBMIT</button>
+              <button type="submit" class="btn custom-bg text-white shadow-none">ĐĂNG KÝ</button>
             </div>
           </div>
         </form>
@@ -157,10 +157,10 @@
 
   <?php 
     if(isset($_GET['cancel_status'])){
-      alert('success','Booking Cancelled!');
+      alert('Thành công','Đã hủy đặt phòng!');
     }  
     else if(isset($_GET['review_status'])){
-      alert('success','Thank you for rating & review!');
+      alert('Thành công','Chân thành cảm ơn vì bạn đã đánh giá!');
     }  
   ?>
 
@@ -180,7 +180,7 @@
             window.location.href="bookings.php?cancel_status=true";
           }
           else{
-            alert('error','Cancellation Failed!');
+            alert('Lỗi','Hủy phòng thất bại!');
           }
         }
 
@@ -221,7 +221,7 @@
           var modal = bootstrap.Modal.getInstance(myModal);
           modal.hide();
   
-          alert('error',"Rating & Review Failed!");
+          alert('Lỗi',"Đánh giá thất bại!");
         }
       }
 

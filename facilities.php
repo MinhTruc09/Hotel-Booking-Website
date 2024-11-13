@@ -19,12 +19,12 @@
   <?php require('inc/header.php'); ?>
 
   <div class="my-5 px-4">
-    <h2 class="fw-bold h-font text-center">OUR FACILITIES</h2>
+    <h2 class="fw-bold h-font text-center">VỀ CƠ SỞ VẬT CHẤT</h2>
     <div class="h-line bg-dark"></div>
     <p class="text-center mt-3">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Temporibus incidunt odio quos <br> dolore commodi repudiandae 
-      tenetur consequuntur et similique asperiores.
+    HKT Hotel tự hào sở hữu cơ sở vật chất hiện đại và sang trọng, mang lại sự tiện nghi tối đa cho khách hàng. Mỗi phòng nghỉ đều được trang bị đầy đủ tiện ích cao cấp như điều hòa không khí, TV màn hình phẳng, minibar và wifi tốc độ cao. Ngoài ra, khách sạn còn cung cấp hệ thống phòng họp và hội nghị với trang thiết bị tiên tiến, phù hợp cho các sự kiện và hội thảo chuyên nghiệp.<br>
+
+Khách sạn còn có nhà hàng phục vụ ẩm thực đa dạng từ Á đến Âu, một phòng gym hiện đại với trang thiết bị tập luyện đầy đủ, cùng dịch vụ spa thư giãn giúp du khách tận hưởng những phút giây nghỉ ngơi thoải mái. Tất cả các tiện ích đều được thiết kế nhằm đảm bảo sự hài lòng và an toàn tuyệt đối cho khách hàng.
     </p>
   </div>
 

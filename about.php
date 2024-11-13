@@ -18,28 +18,24 @@
   <?php require('inc/header.php'); ?>
 
   <div class="my-5 px-4">
-    <h2 class="fw-bold h-font text-center">ABOUT US</h2>
+    <h2 class="fw-bold h-font text-center">VỀ CHÚNG TÔI</h2>
     <div class="h-line bg-dark"></div>
     <p class="text-center mt-3">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Temporibus incidunt odio quos <br> dolore commodi repudiandae 
-      tenetur consequuntur et similique asperiores.
+      Với sự tâm huyết của những người sáng lập và phát triển trang web HKT Hotel. 3 sinh viên thuộc lĩnh vực công nghệ (Hoàng, Khang, Trực)<br>
+      đã xây dựng HKT thành một nền tảng tiện lợi, giúp khách hàng dễ dàng tìm kiếm và đặt phòng khách sạn nhanh chóng. Không chỉ chú trọng vào trải nghiệm người dùng, Hoàng Trực Khang còn luôn nỗ lực để tích hợp các công nghệ hiện đại, nhằm nâng cao chất lượng dịch vụ và đảm bảo sự hài lòng tối đa cho khách hàng.
     </p>
   </div>
 
   <div class="container">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
-        <h3 class="mb-3">Lorem ipsum dolor sit</h3>
+        <h3 class="mb-3">CHÂN DUNG DOANH NHÂN HỨA HẸN NHIỀU NHẤT AKA SIÊU ĐA CẤP (TRẦN MINH HOÀNG)</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Omnis minima sapiente aliquam sed officia nostrum fuga?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Omnis minima sapiente aliquam sed officia nostrum fuga?
+          Trần Minh Hoàng là chủ tịch của HKT Hotel, đã lâu đã phát triển dịch vụ và quản lý các phòng của khách sạn. Công việc của họ rất quan trọng, nhằm đảm bảo tính hài lòng và sự an toàn của khách hàng. Hoàng Trực Khang và Khang đã tạo ra những dịch vụ tốt nhất cho khách hàng, giúp họ tìm kiếm và đặt phòng khách sạn nhanh chóng.
         </p>
       </div>
       <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
-        <img src="images/about/about.jpg" class="w-100">
+        <img src="images/about/CEO1.jpg" class="w-100">
       </div>
     </div>
   </div>
@@ -49,31 +45,31 @@
       <div class="col-lg-3 col-md-6 mb-4 px-4">
         <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
           <img src="images/about/hotel.svg" width="70px">
-          <h4 class="mt-3">100+ ROOMS</h4>
+          <h4 class="mt-3">HƠN 100 PHÒNG</h4>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mb-4 px-4">
         <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
           <img src="images/about/customers.svg" width="70px">
-          <h4 class="mt-3">200+ CUSTOMERS</h4>
+          <h4 class="mt-3">LÊN ĐẾN 200 KHÁCH HÀNG HẰNG NGÀY</h4>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mb-4 px-4">
         <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
           <img src="images/about/rating.svg" width="70px">
-          <h4 class="mt-3">150+ REVIEWS</h4>
+          <h4 class="mt-3">1000 BÀI ĐÁNH GIÁ TÍCH CỰC</h4>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mb-4 px-4">
         <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
           <img src="images/about/staff.svg" width="70px">
-          <h4 class="mt-3">200+ STAFFS</h4>
+          <h4 class="mt-3">100 NHÂN VIÊN HỖ TRỢ</h4>
         </div>
       </div>
     </div>
   </div>
 
-  <h3 class="my-5 fw-bold h-font text-center">MANAGEMENT TEAM</h3>
+  <h3 class="my-5 fw-bold h-font text-center">ĐỘI NGŨ QUẢN LÝ</h3>
 
   <div class="container px-4">
     <div class="swiper mySwiper">

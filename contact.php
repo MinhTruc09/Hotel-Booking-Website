@@ -12,12 +12,11 @@
   <?php require('inc/header.php'); ?>
 
   <div class="my-5 px-4">
-    <h2 class="fw-bold h-font text-center">CONTACT US</h2>
+    <h2 class="fw-bold h-font text-center">LIÊN HỆ VỚI CHÚNG TÔI</h2>
     <div class="h-line bg-dark"></div>
     <p class="text-center mt-3">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Temporibus incidunt odio quos <br> dolore commodi repudiandae 
-      tenetur consequuntur et similique asperiores.
+    Nếu bạn có bất kỳ thắc mắc nào hoặc muốn đặt phòng tại HKT Hotel, vui lòng liên hệ với chúng tôi qua các thông tin sau:<br>
+    Đội ngũ nhân viên thân thiện và chuyên nghiệp của chúng tôi luôn sẵn sàng hỗ trợ bạn 24/7, đảm bảo mang đến những trải nghiệm tốt nhất khi lưu trú tại HKT Hotel.
     </p>
   </div>
 
@@ -28,12 +27,12 @@
         <div class="bg-white rounded shadow p-4">
           <iframe class="w-100 rounded mb-4" height="320px" src="<?php echo $contact_r['iframe'] ?>" loading="lazy"></iframe>
 
-          <h5>Address</h5>
+          <h5>Địa chỉ</h5>
           <a href="<?php echo $contact_r['gmap'] ?>" target="_blank" class="d-inline-block text-decoration-none text-dark mb-2">
             <i class="bi bi-geo-alt-fill"></i> <?php echo $contact_r['address'] ?>
           </a>
 
-          <h5 class="mt-4">Call us</h5>
+          <h5 class="mt-4">Số điện thoại của Khách sạn</h5>
           <a href="tel: +<?php echo $contact_r['pn1'] ?>" class="d-inline-block mb-2 text-decoration-none text-dark">
             <i class="bi bi-telephone-fill"></i> +<?php echo $contact_r['pn1'] ?>
           </a>
@@ -54,7 +53,7 @@
             <i class="bi bi-envelope-fill"></i> <?php echo $contact_r['email'] ?>
           </a>
 
-          <h5 class="mt-4">Follow us</h5>
+          <h5 class="mt-4">Theo dõi chúng tôi</h5>
           <?php 
             if($contact_r['tw']!=''){
               echo<<<data
@@ -76,9 +75,9 @@
       <div class="col-lg-6 col-md-6 px-4">
         <div class="bg-white rounded shadow p-4">
           <form method="POST">
-            <h5>Send a message</h5>
+            <h5>Gửi tin nhắn</h5>
             <div class="mt-3">
-              <label class="form-label" style="font-weight: 500;">Name</label>
+              <label class="form-label" style="font-weight: 500;">Tên</label>
               <input name="name" required type="text" class="form-control shadow-none">
             </div>
             <div class="mt-3">
@@ -86,14 +85,14 @@
               <input name="email" required type="email" class="form-control shadow-none">
             </div>
             <div class="mt-3">
-              <label class="form-label" style="font-weight: 500;">Subject</label>
+              <label class="form-label" style="font-weight: 500;">Vấn đề</label>
               <input name="subject" required type="text" class="form-control shadow-none">
             </div>
             <div class="mt-3">
-              <label class="form-label" style="font-weight: 500;">Message</label>
+              <label class="form-label" style="font-weight: 500;">Nhập tin nhắn</label>
               <textarea name="message" required class="form-control shadow-none" rows="5" style="resize: none;"></textarea>
             </div>
-            <button type="submit" name="send" class="btn text-white custom-bg mt-3">SEND</button>
+            <button type="submit" name="send" class="btn text-white custom-bg mt-3">GỬI</button>
           </form>
         </div>
       </div>
@@ -101,10 +100,16 @@
   </div>
 
 
-  <?php 
+  <?php
+  // Assuming the insert function is defined somewhere in the codebase
+  function insert($q, $values, $types) {
+      // Implementation of insert function
+  }
 
-    if(isset($_POST['send']))
-    {
+  // ... previous code remains the same
+
+  if(isset($_POST['send']))
+  {
       $frm_data = filteration($_POST);
 
       $q = "INSERT INTO `user_queries`(`name`, `email`, `subject`, `message`) VALUES (?,?,?,?)";
@@ -112,13 +117,14 @@
 
       $res = insert($q,$values,'ssss');
       if($res==1){
-        alert('success','Mail sent!');
+          alert('Thành công','Mail đã được gửi!');
       }
       else{
-        alert('error','Server Down! Try again later.');
+          alert('Lỗi','Server đang bảo trì, xin hãy thử lại.');
       }
-    }
+  }
   ?>
+
 
   <?php require('inc/footer.php'); ?>
 
